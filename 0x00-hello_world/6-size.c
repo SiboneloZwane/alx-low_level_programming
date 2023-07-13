@@ -1,5 +1,9 @@
 #include<stdio.h>
-
+/**
+* main - entry point
+*
+* Return:0 indicates that the program has ended successfully.
+*/
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));

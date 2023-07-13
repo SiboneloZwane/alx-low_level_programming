@@ -1,4 +1,9 @@
 #include<stdio.h>
+/**
+* main - entry point
+*
+* Return:0 indicates that the program has ended successfully.
+*/
 
 int main(void)
 {
