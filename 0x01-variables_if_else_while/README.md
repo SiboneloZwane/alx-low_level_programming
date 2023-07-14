@@ -1,0 +1,1 @@
+This project forms part of the ALX Full Stack Software Engineering program. It reinforces lessons on arithmetic operators, relational operators, variable declaration, Boolean operators, commenting, and loops in C.
