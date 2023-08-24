@@ -1,25 +1,25 @@
 #include <stdio.h>
-#include "custom_lists.h"  // Update this to match your header file name
+#include "lists.h"
 
 /**
- * print_custom_list - prints all the elements of a custom linked list
- * @head: pointer to the custom_node_t list to print
+ * print_list - prints all the elements of a linked list
+ * @h: pointer to the list_t list to print
  *
  * Return: the number of nodes printed
  */
-size_t print_custom_list(const custom_node_t *head)
+size_t print_list(const list_t *h)
 {
-    size_t count = 0;
+	size_t s = 0;
 
-    while (head)
-    {
-        if (!head->data)
-            printf("[0] (nil)\n");
-        else
-            printf("[%u] %s\n", head->length, head->data);
-        head = head->next;
-        count++;
-    }
+	while (h)
+	{
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		s++;
+	}
 
-    return count;
+	return (s);
 }

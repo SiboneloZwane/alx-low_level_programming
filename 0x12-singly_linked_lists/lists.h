@@ -1,25 +1,25 @@
 #ifndef LISTS_H
 #define LISTS_H
-/**
- * Custom singly linked list node structure
- * struct custom_node - singly linked list node
- * @data: custom data - (malloc'ed string)
- * @length: length of the data string
- * @next: points to the next node
- *
- * Description: Custom singly linked list node structure
- */
-typedef struct custom_node
-{
-    char *data;
-    unsigned int length;
-    struct custom_node *next;
-} custom_node_t;
 
-size_t print_custom_list(const custom_node_t *head);
-size_t custom_list_length(const custom_node_t *head);
-custom_node_t *add_custom_node(custom_node_t **head, const char *data);
-custom_node_t *add_custom_node_end(custom_node_t **head, const char *data);
-void free_custom_list(custom_node_t *head);
+/**
+ * Singly linked list node structure
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ * 
+ */
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
+
+size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
 
 #endif
